@@ -12,6 +12,11 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function area(l1,l2) {
+    return l1*l2
+}
+let result = area(11,15)
+console.log(area(11,15))
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -20,18 +25,57 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("--------esercizio2---------")
+
+
+
+function crazySum(p1 , p2) {
+    
+   if (p1 === p2) {
+    return p1 + p2;
+   } else {
+    return (p1 + p2) * 3;
+   }
+}
+const x = crazySum( 11 , 10 )
+console.log(x)
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
+console.log("-------------esercizio 3-------------")
+function crazyDiff(num1) {
+    if (num1>19) {
+        return (num1/19)
+    } else {
+        return(num1/19)*3
+    }   
+}
+const y = crazyDiff(30)
+console.log(y)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
+console.log("-------------esercizio 4-------------")
+
+
+
+function boundary(numintero) {
+    
+   if (numintero >= 20 && (numintero <=100) | (numintero === 400)) {
+    return true
+   } else {
+    return false
+   }
+   
+}
+const numintero = 5
+ console.log(boundary(numintero))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -40,7 +84,22 @@ REGOLE
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
+console.log("-------------esercizio 5-------------")
 
+function epify(st) {
+
+
+    
+    if (typeof st === "string" ) {
+        return true
+    } else {
+        ( typeof st !== "string")
+        return false
+    }
+}
+
+const st = "epicode"
+console.log(st)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
